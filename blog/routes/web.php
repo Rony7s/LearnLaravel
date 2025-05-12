@@ -25,3 +25,8 @@ Route::get('/comments/{comment}/edit', [CommentController::class, 'edit'])->name
 Route::put('/comments/{comment}', [CommentController::class, 'update'])->name('comments.update');
 // Delete a specific comment
 Route::delete('/comments/{comment}', [CommentController::class, 'destroy'])->name('comments.destroy');
+
+// this route for class six with tailwindcss and component
+Route::get('/students', function(){
+    return view("students");
+});
